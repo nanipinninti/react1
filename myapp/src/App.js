@@ -1,9 +1,8 @@
-import ClickCounter from "./Components/clickcounter";
-import SpeedoMeter  from "./Components/SpeedoMeter";
+import LoginApp from "./Components/LoginApp";
 const App = ()=>{
   return(
     <div>
-      <SpeedoMeter/>
+      <LoginApp/>
     </div>
   );
 }

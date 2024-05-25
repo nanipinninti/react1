@@ -1,8 +1,7 @@
 import {Component} from 'react';
 import './index.css';
 class SpeedoMeter extends Component{
-    state = {speed : 0,
-    nani:1};
+    state = {speed : 0};
     accelerate = ()=>{
         this.setState(
             (previoustae)=>{
