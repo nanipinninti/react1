@@ -1,0 +1,16 @@
+.button{
+    background-color: #007bff;
+}
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: #f1f5f8;
+    margin-top: -20px;
+
+}
+.heading{
+    color: #2d3a35;
+}
+.count{
+    color:#c20a72;
+}

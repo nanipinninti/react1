@@ -1,0 +1,41 @@
+.Container{
+    background-color: #07080c;
+    min-width: 100%;
+    min-height: 110vh;
+    color: white;
+    margin-top: -1.55%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: c
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    color: white;
+}
+.accelration{
+    background-color: blue;
+    display: block;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 28px;
+}
+.brake{
+    background-color: black;
+    display: block;
+    border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
+    color: white;
+    height: 28px;
+}
+h1{
+    font-style: italic;
+}
+img{
+    height: 50%;
+    width: 50%;
+}

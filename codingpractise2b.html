@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <!-- # react -->
+        <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js" crossorigin></script>
+
+         <!-- bootstrap -->
+         <!-- Bootstrap CSS -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <title>Notifications
+        </title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-sm-12 col-md-12 border bg-light">
+                    <h1 class="d-block">Notifications</h1>
+                </div>
+                <div class="col-sm-12 col-md-12 d-flex justify-content-center flex-column
+                p-50" id="root">
+
+                </div>
+                <script type="text/babel">
+                    const information = [
+                        {
+                            id:1,
+                            link:"https://assets.ccbp.in/frontend/react-js/primary-icon-img.png",
+                            message:"Information Message",
+                            color:"#0b69ff",
+                        },
+                        {
+                            id:2,
+                            link:"https://assets.ccbp.in/frontend/react-js/success-icon-img.png",
+                            message:"Success Message",
+                            color:"#2dca73",
+                        },
+                        {
+                            id:3,
+                            link:"https://assets.ccbp.in/frontend/react-js/warning-icon-img.png",
+                            message:"Warning Message",
+                            color:"#ffb800",
+                        },
+                        {
+                            id:4,
+                            link:"https://assets.ccbp.in/frontend/react-js/danger-icon-img.png",
+                            message:"Error Message",
+                            color:"#ff0b37",
+                        }
+                    ];
+                    const ForText = (props)=>{
+                        const {text} = props;
+                        return (
+                            <span className="text">{text}</span>
+                        );
+                    };
+                    const Forimage = (props)=>{
+                        const {link} = props;
+                        return (
+                            <img src ={link}/>
+                        );
+                    };
+                    const Box = (props)=>{
+                        const {link,message,color} = props;
+                        return (<div className="box" style={{background :color}}>
+                            <Forimage link = {link} />
+                            <ForText text = {message} />
+                            </div>);
+                    };
+                    ReactDOM.render(
+                        <div>
+                            {
+                                information.map((info)=>(
+                                    <Box link={info.link} message={info.message} color={info.color} key={info.id}/>
+                                )
+                                )
+                            }
+                        </div>,
+                        document.querySelector('#root')
+                    );
+                </script>
+            </div>
+        </div>
+    </body>
+</html>
