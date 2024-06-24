@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .heading{
+    color:rgb(27, 54, 88);
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .userlist{
+    list-style-type: none;
+    padding: 0;
+  }
