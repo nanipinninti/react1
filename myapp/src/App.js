@@ -1,9 +1,9 @@
 import {Component} from 'react';
-import FeedBackApp from './Components/FeedBackApp';
+import LettersCalculator from './Components/LettersCalculator';
 class App extends Component{
     render(){
         return(
-            <FeedBackApp/>
+            <LettersCalculator/>
         )
     }
 }

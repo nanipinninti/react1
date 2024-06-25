@@ -1,0 +1,51 @@
+.container{
+    background: linear-gradient(90deg,#1d976c,#93f9b9);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    gap: 5px;
+    color: white;
+    padding-left: 25px;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+.heading{
+    font-size: 3em;
+}
+input{
+    border :1px solid white;
+    border-radius: 2px;
+    background: transparent;
+    color: white;
+    height: 6vh;
+    font-size: 1.1rem;
+}
+button{
+    outline : none;
+    background-color: white;
+    border: none;
+    width: 45%;
+    height: 8vh;
+    color: #219a6f;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.image img{
+    height: 50vh;
+}
+h3{
+    font-size: 0.7em;
+}
